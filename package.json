@@ -1,7 +1,7 @@
 {
   "name": "@kne-components/project-test",
   "version": "0.1.0",
-  "description": "",
+  "description": "测试一下",
   "scripts": {
     "init": "husky",
     "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
