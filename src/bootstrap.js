@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { globalPreset } from './preset';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -11,15 +11,15 @@ if (process.env.NODE_ENV === 'development') {
   import('@kne/modules-dev/dist/create-entry').then(module => {
     const Entry = module.default(App);
     root.render(
-      <BrowserRouter>
+      <HashRouter>
         <Entry preset={globalPreset} themeToken={globalPreset.themeToken} />
-      </BrowserRouter>
+      </HashRouter>
     );
   });
 } else {
   root.render(
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
