@@ -5,7 +5,7 @@
   "scripts": {
     "init": "husky",
     "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
-    "build": "cross-env COMPONENTS_NAME=project-test MODULES_DEV_PUBLIC_URL=project-test craco build",
+    "build": "cross-env COMPONENTS_NAME=project-test MODULES_DEV_PUBLIC_URL=/project-test craco build",
     "create": "modules-dev-create",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
